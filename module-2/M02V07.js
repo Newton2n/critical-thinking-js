@@ -1,4 +1,4 @@
-//* Grouping and Aggregating Data
+//* Grouping  Data
 
 // Scenario: Count every survey and group by response
 
@@ -23,7 +23,7 @@ const surveyResponses = [
   "E",
 ];
 
-const result = surveyResponses.reduce((acc, currentValue) => {
+const groupData = surveyResponses.reduce((acc, currentValue) => {
   //   acc[currentValue] = (acc[currentValue] || 0) + 1;
 
   if (acc[currentValue]) {
@@ -33,8 +33,8 @@ const result = surveyResponses.reduce((acc, currentValue) => {
   } // readability over shortcut
   return acc;
 }, {});
-console.log(result);
+console.log(groupData);
 
-console.log(result["A"], result["B"], result["C"]);
+console.log(groupData["A"], groupData["B"], groupData["C"]);
 //? Output
 // { A: 5, C: 3, B: 5, D: 1 }

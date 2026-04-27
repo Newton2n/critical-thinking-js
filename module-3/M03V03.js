@@ -1,3 +1,5 @@
+//? stack (LIFO)
+
 class Stack {
   #items = [];
   constructor() {}
@@ -36,7 +38,7 @@ class Stack {
 
   //*o(1)
   print(){
-    console.log(this.#items.slice().reverse().join(" from "))
+    console.log(this.#items.slice().reverse().join(" to "))
   }
 }
 
